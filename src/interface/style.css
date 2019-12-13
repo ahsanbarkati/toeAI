@@ -1,0 +1,31 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+.grid3x3 {
+    display:table;
+    height:450px;
+    width:450px;
+    position: relative;
+    margin-left: 200px;
+    margin-top:100px
+}
+.grid3x3 > div {
+    display:table-row;
+    width:100%;
+}
+.grid3x3 > div:first-child,
+.grid3x3 > div:last-child {
+    height: 150px;
+}
+.grid3x3 > div > div {
+    display:table-cell;
+}
+.grid3x3 > div > div:first-child,
+.grid3x3 > div > div:last-child {
+    width:150px;
+}
+
+div {
+    outline: 1px solid orange;
+}
